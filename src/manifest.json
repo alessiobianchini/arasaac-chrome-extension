@@ -1,0 +1,9 @@
+{
+    "name": "Arasaac tooltip",
+    "version": "1.0",
+    "description": "Chrome extension for mouseover Arasaac translation - Mouse over to translate to Arasaac. When mouse hover on text, it shows translated tooltip.",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html"
+    }
+  }
