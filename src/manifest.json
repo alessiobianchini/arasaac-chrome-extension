@@ -3,7 +3,30 @@
     "version": "1.0",
     "description": "Chrome extension for mouseover Arasaac translation - Mouse over to translate to Arasaac. When mouse hover on text, it shows translated tooltip.",
     "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "webNavigation",
+        "scripting",
+        "storage",
+        "tabs"
+    ],
+    "icons": {
+        "16": "assets/arasaac.png",
+        "19": "assets/arasaac.png",
+        "32": "assets/arasaac.png",
+        "38": "assets/arasaac.png",
+        "48": "assets/arasaac.png",
+        "128": "assets/arasaac.png"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
     "action": {
         "default_popup": "index.html"
-    }
-  }
+    },
+    "host_permissions": [
+        "http://*/",
+        "https://*/"
+    ]
+}

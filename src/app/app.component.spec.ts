@@ -19,7 +19,6 @@ describe('AppComponent', () => {
   it(`should have as title 'arasaac-chrome-extension'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('arasaac-chrome-extension');
   });
 
   it('should render title', () => {
