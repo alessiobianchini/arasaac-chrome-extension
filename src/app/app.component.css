@@ -45,3 +45,15 @@
 .bt {
     border-top: 1px solid black;
 }
+
+.ml-5px {
+    margin-left: 5px;
+}
+
+.mr-5px {
+    margin-right: 5px;
+}
+
+.p-5px {
+    padding: 5px;
+}

@@ -1,6 +1,6 @@
-<h5 class="pl-10px">Arasaac tooltip configuration</h5>
+<h5 class="pl-10px">Arasaac translator</h5>
 <form [formGroup]="configForms" class="form-inline p-2 w-500">
-  <div class="form-group row">
+  <!-- <div class="form-group row">
     <label class="sr-only col" for="activeRadio">Tooltip active</label>
     <div class="btn-group btn-group-sm col-6" id="activeRadio" role="group" aria-label="Radio Buttons with Bootstrap 5">
       <input type="radio" formControlName="activeTooltip" [value]="true" class="btn-check" id="btnradio1"
@@ -10,7 +10,7 @@
         autocomplete="off">
       <label class="btn btn-outline-primary" for="btnradio2">False</label>
     </div>
-  </div>
+  </div> -->
   <div class="form-group row pt-10px">
     <label class="sr-only col">Language</label>
     <div class="col-6">
@@ -33,12 +33,11 @@
 <button class="btn btn-outline-secondary col pl-10px ml-10px" (click)="load()">Search</button>
 <div class="row pt-10px" *ngIf="responses">
   <ng-container *ngFor="let key of respKeys">
-    <div class="row ml-10px .bt">
+    <div class="row ml-5px mr-5px bt">
       <div class="col-12">{{key}}</div>
       <ng-container *ngFor="let res of responses[key]">
-        <div class="col-2">
-          <img src="{{ 'https://api.arasaac.org/api/pictograms/' + res._id + '?w=200&q=100' }}" [alt]="res._id"
-            height="70">
+        <div class="col-2 p-5px">
+          <img src="{{ 'https://api.arasaac.org/api/pictograms/' + res._id + '?w=200&q=100' }}" [alt]="res._id" height="65">
         </div>
       </ng-container>
     </div>

@@ -34,6 +34,7 @@ export class AppComponent implements OnInit, OnDestroy {
     })
   }
 
+  
   get respKeys() {
     return this.responses ? Object.keys(this.responses) : null;
   }
